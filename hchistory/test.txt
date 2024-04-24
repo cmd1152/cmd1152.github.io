@@ -1,0 +1,212 @@
+﻿{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"美味的食物","level":100,"trip":"jYTF8t","color":"FAF","time":1713931285072}
+{"cmd":"onlineRemove","userid":3589245770918,"nick":"Klm","channel":"lounge","time":1713931288896}
+{"nick":"whoami_6666","trip":"48wNI7","uType":"user","hash":"LxFPQRmg8ulj9OD","level":100,"userid":3589245770918,"isBot":false,"color":"FFEBB5","cmd":"onlineAdd","channel":"lounge","time":1713931288896}
+{"cmd":"info","text":"Klm is now whoami_6666","channel":"lounge","time":1713931288898}
+{"cmd":"info","channel":"lounge","from":9087895216828,"to":3084338405339,"text":"You whispered to @mbot: kick whoami_6666","type":"whisper","time":1713931288921}
+{"cmd":"onlineRemove","userid":3589245770918,"nick":"whoami_6666","channel":"lounge","time":1713931288929}
+{"cmd":"info","text":"Kicked whoami_6666","channel":"lounge","time":1713931288930}
+{"cmd":"info","channel":"lounge","from":"mbot","to":9087895216828,"text":"mbot whispered: whoami_5489 used whisper kick on nickname 'whoami_6666'","type":"whisper","trip":"hACkeR","level":999999,"uType":"mod","time":1713931288936}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;★★★★★★小刀，tx用来割腕用的小刀。","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931289054}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"下午好，whoami_6666~","level":100,"trip":"xI/cmd","color":"C1EAE7","time":1713931289928}
+{"cmd":"onlineAdd","nick":"Klm","trip":"48wNI7","uType":"user","hash":"LxFPQRmg8ulj9OD","level":100,"userid":3368493514018,"isBot":false,"color":false,"channel":"lounge","time":1713931295680}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;★★★★★★小刀，tx用来割腕用的小刀。","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931295838}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"Klm，你可曾知晓，所爱隔山海 山海亦可平","level":100,"trip":"xI/cmd","color":"C1EAE7","time":1713931295927}
+{"nick":"Klm","trip":"48wNI7","uType":"user","hash":"LxFPQRmg8ulj9OD","level":100,"userid":3368493514018,"isBot":false,"color":"FFEBB5","cmd":"updateUser","channel":"lounge","time":1713931296062}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":3368493514018,"channel":"lounge","text":"e","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931297593}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":3368493514018,"channel":"lounge","text":";peep 38","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931299828}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"FACDED","cmd":"updateUser","channel":"lounge","time":1713931304982}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":3368493514018,"channel":"lounge","text":"把我踢了干嘛","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931306639}
+{"cmd":"onlineRemove","userid":3368493514018,"nick":"Klm","channel":"lounge","time":1713931330921}
+{"nick":"whoami_1234","trip":"48wNI7","uType":"user","hash":"LxFPQRmg8ulj9OD","level":100,"userid":3368493514018,"isBot":false,"color":"FFEBB5","cmd":"onlineAdd","channel":"lounge","time":1713931330921}
+{"cmd":"info","text":"Klm is now whoami_1234","channel":"lounge","time":1713931330923}
+{"cmd":"info","channel":"lounge","from":9087895216828,"to":3084338405339,"text":"You whispered to @mbot: kick whoami_1234","type":"whisper","time":1713931330939}
+{"cmd":"onlineRemove","userid":3368493514018,"nick":"whoami_1234","channel":"lounge","time":1713931330945}
+{"cmd":"info","text":"Kicked whoami_1234","channel":"lounge","time":1713931330946}
+{"cmd":"info","channel":"lounge","from":"mbot","to":9087895216828,"text":"mbot whispered: whoami_5489 used whisper kick on nickname 'whoami_1234'","type":"whisper","trip":"hACkeR","level":999999,"uType":"mod","time":1713931330953}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;★★★★★★小刀，tx用来割腕用的小刀。","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931331184}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"whoami_1234，你可曾知道cancan2333_","level":100,"trip":"xI/cmd","color":"FACDED","time":1713931331936}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"B6ADF0","cmd":"updateUser","channel":"lounge","time":1713931334984}
+{"cmd":"onlineAdd","nick":"awa","trip":"","uType":"user","hash":"pOZViFPZCoarCAE","level":100,"userid":8138079815772,"isBot":false,"color":false,"channel":"lounge","time":1713931341748}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"下午好，awa~","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931341906}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"Radium_写道，忘却并不是可怕的，而是你不肯。","level":100,"trip":"xI/cmd","color":"B6ADF0","time":1713931343936}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"改不了名字","level":100,"trip":"jYTF8t","color":"FAF","time":1713931351085}
+{"cmd":"chat","nick":"awa","uType":"user","userid":8138079815772,"channel":"lounge","text":"。","level":100,"time":1713931352828}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"alephb是小天使","level":100,"trip":"xI/cmd","color":"B6ADF0","time":1713931352937}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"awa最可爱了","level":100,"trip":"xI/cmd","color":"B6ADF0","time":1713931355938}
+{"cmd":"onlineRemove","userid":6078199512284,"nick":"alepha","channel":"lounge","time":1713931362106}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"awa最可爱了","level":100,"trip":"jYTF8t","color":"FAF","time":1713931362189}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D6F8C6","cmd":"updateUser","channel":"lounge","time":1713931364983}
+{"cmd":"onlineAdd","nick":"a","trip":"","uType":"user","hash":"YmNYg/iRPHiEAOn","level":100,"userid":257513709833,"isBot":false,"color":false,"channel":"lounge","time":1713931390825}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"中午好，a","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931391073}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"a，你可曾了解麻辣教师","level":100,"trip":"xI/cmd","color":"D6F8C6","time":1713931391940}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D2AFF7","cmd":"updateUser","channel":"lounge","time":1713931394983}
+{"cmd":"onlineRemove","userid":8840273035323,"nick":"Azurer","channel":"lounge","time":1713931415334}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"@alephb","level":100,"trip":"CrvQXO","color":"000000","time":1713931416022}
+{"cmd":"onlineAdd","nick":"Klm","trip":"48wNI7","uType":"user","hash":"LxFPQRmg8ulj9OD","level":100,"userid":9375641616451,"isBot":false,"color":false,"channel":"lounge","time":1713931419593}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;★★★★★★小刀，tx用来割腕用的小刀。","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931419750}
+{"nick":"Klm","trip":"48wNI7","uType":"user","hash":"LxFPQRmg8ulj9OD","level":100,"userid":9375641616451,"isBot":false,"color":"FFEBB5","cmd":"updateUser","channel":"lounge","time":1713931420025}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"记忆付诸生命之时，时间亦将付诸生命。","level":100,"trip":"xI/cmd","color":"D2AFF7","time":1713931421944}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"E9FFE2","cmd":"updateUser","channel":"lounge","time":1713931424983}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":";peep 30","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931425144}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"C0B3BE","cmd":"updateUser","channel":"lounge","time":1713931454983}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":">CrvQXO Alice：\n>@alephb\n\n@Alice ？","level":100,"trip":"jYTF8t","color":"FAF","time":1713931455365}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"alephb棒棒","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931455594}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"。。","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931462580}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"棒棒","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931466962}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"@alephb 你会Python把带\\r\\n的东西输出成有换行符的东西吗","level":100,"trip":"CrvQXO","color":"000000","time":1713931468759}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F9E2EB","cmd":"updateUser","channel":"lounge","time":1713931484984}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"一个一个Enter太麻烦了","level":100,"trip":"CrvQXO","color":"000000","time":1713931487862}
+{"cmd":"onlineRemove","userid":257513709833,"nick":"a","channel":"lounge","time":1713931494571}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"直接~~~“““","level":100,"trip":"jYTF8t","color":"FAF","time":1713931510131}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"FCB3E3","cmd":"updateUser","channel":"lounge","time":1713931514985}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"6，看不懂","level":100,"trip":"CrvQXO","color":"000000","time":1713931519196}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"直接\n~~~","level":100,"trip":"jYTF8t","color":"FAF","time":1713931523663}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"好麻烦a","level":100,"trip":"jYTF8t","color":"FAF","time":1713931530104}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"\u0000 么","level":100,"trip":"xI/cmd","color":"FCB3E3","time":1713931538963}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D6E8F3","cmd":"updateUser","channel":"lounge","time":1713931544985}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"...我这个东西46,244 字节","level":100,"trip":"CrvQXO","color":"000000","time":1713931549557}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"在这发就秒rl or kick","level":100,"trip":"CrvQXO","color":"000000","time":1713931560133}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"CCE4B4","cmd":"updateUser","channel":"lounge","time":1713931574985}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"e","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931589051}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"Klm最可爱了","level":100,"trip":"xI/cmd","color":"CCE4B4","time":1713931589970}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"e","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931596174}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D3F7EE","cmd":"updateUser","channel":"lounge","time":1713931604986}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"@Alice 直接\n~~~ python\n\"\"\"\n内容\n内容\n内容\n\"\"\"","level":100,"trip":"jYTF8t","color":"FAF","time":1713931618306}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"应该可以","level":100,"trip":"jYTF8t","color":"FAF","time":1713931628918}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"alephb棒棒","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931629154}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"C5B8C2","cmd":"updateUser","channel":"lounge","time":1713931634988}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"好","level":100,"trip":"CrvQXO","color":"000000","time":1713931645442}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"e","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931656439}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"出错了？","level":100,"trip":"CrvQXO","color":"000000","time":1713931657507}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"AED3FA","cmd":"updateUser","channel":"lounge","time":1713931664986}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"\"\"\"\n内容\n内容\n内容\n\"\"\"","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931667316}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"这是啥","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931669240}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D2BEB3","cmd":"updateUser","channel":"lounge","time":1713931694987}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":">jYTF8t alephb：\n>@Alice 直接\n>~~~ python\n>'''\n>内容\n>内容\n>内容\n>'''\n\n@alephb ","level":100,"trip":"jYTF8t","color":"FAF","time":1713931697442}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"《sandbox> exited with status 0》","level":100,"trip":"CrvQXO","color":"000000","time":1713931700363}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"好吧好像不行","level":100,"trip":"jYTF8t","color":"FAF","time":1713931708694}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"为什么不行？","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931712974}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"我说行就行，不行也得行","level":100,"trip":"xI/cmd","color":"D2BEB3","time":1713931712982}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F1E4B4","cmd":"updateUser","channel":"lounge","time":1713931724988}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"嘤","level":100,"trip":"CrvQXO","color":"000000","time":1713931733908}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"不想一个一个Enter","level":100,"trip":"CrvQXO","color":"000000","time":1713931741025}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"AAC8F5","cmd":"updateUser","channel":"lounge","time":1713931754988}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"owob","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931762440}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"https://b23.tv/8dbCraf","level":100,"trip":"jYTF8t","color":"FAF","time":1713931769352}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"BDB2F1","cmd":"updateUser","channel":"lounge","time":1713931784990}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"@Alice ","level":100,"trip":"jYTF8t","color":"FAF","time":1713931806765}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"你看看","level":100,"trip":"jYTF8t","color":"FAF","time":1713931810814}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"AECFAD","cmd":"updateUser","channel":"lounge","time":1713931814988}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F4BFBF","cmd":"updateUser","channel":"lounge","time":1713931844988}
+{"cmd":"onlineAdd","nick":"hello","trip":"","uType":"user","hash":"6J5aBHrvbuOQ/m/","level":100,"userid":2451658950763,"isBot":false,"color":false,"channel":"lounge","time":1713931858106}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"Welcome, hello!","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931858264}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"hello，你可曾知道爱比克泰德","level":100,"trip":"xI/cmd","color":"F4BFBF","time":1713931859993}
+{"cmd":"chat","nick":"hello","uType":"user","userid":2451658950763,"channel":"lounge","text":"呃","level":100,"time":1713931873339}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F0EBEC","cmd":"updateUser","channel":"lounge","time":1713931874989}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"。。","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931876126}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":";hasn @hello ","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931885837}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"hello","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713931886057}
+{"cmd":"onlineRemove","userid":2451658950763,"nick":"hello","channel":"lounge","time":1713931887662}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"3小时快速入门","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931900427}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"看不懂","level":100,"trip":"CrvQXO","color":"000000","time":1713931903391}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F6BEF7","cmd":"updateUser","channel":"lounge","time":1713931904990}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"怪不得是B站大学","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713931907438}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"EAF7E3","cmd":"updateUser","channel":"lounge","time":1713931934990}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"E3DBC8","cmd":"updateUser","channel":"lounge","time":1713931964992}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"B4EFC0","cmd":"updateUser","channel":"lounge","time":1713931994992}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"\u0000 6","level":100,"trip":"xI/cmd","color":"B4EFC0","time":1713932019023}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"DBDBB9","cmd":"updateUser","channel":"lounge","time":1713932024990}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"。。","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932038825}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"AAEAD5","cmd":"updateUser","channel":"lounge","time":1713932054991}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"@whoami_5489 你有几把吗","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932056958}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"哈哈，吃几把","level":100,"trip":"xI/cmd","color":"AAEAD5","time":1713932061026}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"e","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932063184}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"E8F0CD","cmd":"updateUser","channel":"lounge","time":1713932084993}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D9B6D5","cmd":"updateUser","channel":"lounge","time":1713932114992}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D8C5D3","cmd":"updateUser","channel":"lounge","time":1713932144992}
+{"cmd":"onlineAdd","nick":"oilil","trip":"+o1aHr","uType":"user","hash":"diOQeHbvlXCXoQG","level":100,"userid":2933481564946,"isBot":false,"color":false,"channel":"lounge","time":1713932167716}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;我自认为我有资格有权限，如果我在这两年 你们都把我当作恶人看 那么我不介意让我变成cmd向你们引导的那样","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932167943}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"oilil，你可曾了解流浪地球2","level":100,"trip":"xI/cmd","color":"D8C5D3","time":1713932169041}
+{"cmd":"chat","nick":"oilil","uType":"user","userid":2933481564946,"channel":"lounge","text":";peep 21","level":100,"trip":"+o1aHr","time":1713932173314}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"oilil#+o1aHr 呜 了 11时54分18秒, 欢迎回来(\\*￣ω￣)","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932173558}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"AFD0F4","cmd":"updateUser","channel":"lounge","time":1713932174993}
+{"cmd":"chat","nick":"oilil","uType":"user","userid":2933481564946,"channel":"lounge","text":";seen lilio","level":100,"trip":"+o1aHr","time":1713932175457}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"最后一次见到trip为3/e804的用户是在2024-04-23 18:17:06（距现在17时59分9秒）\n他说了：afk schoool","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932175677}
+{"nick":"oilil","trip":"+o1aHr","uType":"user","hash":"diOQeHbvlXCXoQG","level":100,"userid":2933481564946,"isBot":false,"color":"ABCDEF","cmd":"updateUser","channel":"lounge","time":1713932179080}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":">CrvQXO Alice：\n>看不懂\n\n@Alice 那就从第一集开始看","level":100,"trip":"jYTF8t","color":"FAF","time":1713932183432}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"C7E2B6","cmd":"updateUser","channel":"lounge","time":1713932204993}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"。。","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932215485}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"@oilil 你是谁","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932218840}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":";hasn @oilil ","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932225722}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"oilil","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932225976}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"e","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932227959}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"B5DDD0","cmd":"updateUser","channel":"lounge","time":1713932234994}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"EEBDBE","cmd":"updateUser","channel":"lounge","time":1713932264994}
+{"cmd":"onlineAdd","nick":"Alice0_","trip":"CrvQXO","uType":"user","hash":"PW5Oyg7pUMrFs9I","level":100,"userid":3359968544143,"isBot":false,"color":false,"channel":"lounge","time":1713932282597}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;.","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932282755}
+{"nick":"Alice0_","trip":"CrvQXO","uType":"user","hash":"PW5Oyg7pUMrFs9I","level":100,"userid":3359968544143,"isBot":false,"color":"000","cmd":"updateUser","channel":"lounge","time":1713932282833}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"Alice0_，你可曾知晓，当欲望失去了枷锁，向左是地狱，向右也是地狱。","level":100,"trip":"xI/cmd","color":"EEBDBE","time":1713932283061}
+{"cmd":"chat","nick":"oilil","uType":"user","userid":2933481564946,"channel":"lounge","text":";welc 花朵艳丽终散落，谁人世间能长久？今日翻过高山岭，醉生梦死不再有。","level":100,"trip":"+o1aHr","color":"ABCDEF","time":1713932286812}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"为识别码+o1aHr设置欢迎语成功了！","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932287141}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"好像是23","level":100,"trip":"jYTF8t","color":"FAF","time":1713932293074}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D1C7F4","cmd":"updateUser","channel":"lounge","time":1713932294994}
+{"cmd":"chat","nick":"whoami_5489","uType":"user","userid":9087895216828,"channel":"lounge","text":"alephb是小天使","level":100,"trip":"xI/cmd","color":"D1C7F4","time":1713932295062}
+{"cmd":"chat","nick":"Alice0_","uType":"user","userid":3359968544143,"channel":"lounge","text":"听懂了","level":100,"trip":"CrvQXO","color":"000","time":1713932304559}
+{"cmd":"chat","nick":"Alice0_","uType":"user","userid":3359968544143,"channel":"lounge","text":"没看懂","level":100,"trip":"CrvQXO","color":"000","time":1713932307218}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"好好好","level":100,"trip":"jYTF8t","color":"FAF","time":1713932315174}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;十字街","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932315435}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"C4CEDE","cmd":"updateUser","channel":"lounge","time":1713932324995}
+{"cmd":"chat","nick":"Klm","uType":"user","userid":9375641616451,"channel":"lounge","text":"无聊","level":100,"trip":"48wNI7","color":"FFEBB5","time":1713932333411}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"B0CCBD","cmd":"updateUser","channel":"lounge","time":1713932354997}
+{"cmd":"onlineRemove","userid":8138079815772,"nick":"awa","channel":"lounge","time":1713932355346}
+{"cmd":"onlineRemove","userid":9375641616451,"nick":"Klm","channel":"lounge","time":1713932355539}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"可怜的站长","level":100,"trip":"CrvQXO","color":"000000","time":1713932372104}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"全部接口故障","level":100,"trip":"CrvQXO","color":"000000","time":1713932380809}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"EFCEE2","cmd":"updateUser","channel":"lounge","time":1713932384994}
+{"cmd":"chat","nick":"Alice","uType":"user","userid":3538939832654,"channel":"lounge","text":"还被攻击","level":100,"trip":"CrvQXO","color":"000000","time":1713932391463}
+{"cmd":"onlineRemove","userid":3359968544143,"nick":"Alice0_","channel":"lounge","time":1713932397188}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"我英语不好，但我会写United States of America\n我中文不好，但我知道他读美利坚合众国\n我数学不好，但我记得380万平方英里\n我地理不好，但我瞭然地图上的雄鹰\n我历史不好，但我永远不会忘记1776​","level":100,"trip":"jYTF8t","color":"FAF","time":1713932398491}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F9EFC1","cmd":"updateUser","channel":"lounge","time":1713932414997}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D0F6BF","cmd":"updateUser","channel":"lounge","time":1713932444996}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"B7AACF","cmd":"updateUser","channel":"lounge","time":1713932474997}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"E8FEAE","cmd":"updateUser","channel":"lounge","time":1713932504998}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"F7AFCB","cmd":"updateUser","channel":"lounge","time":1713932534998}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"E7E4AF","cmd":"updateUser","channel":"lounge","time":1713932564998}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"CEDBC0","cmd":"updateUser","channel":"lounge","time":1713932594999}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D7BFF1","cmd":"updateUser","channel":"lounge","time":1713932625001}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"B1FAF3","cmd":"updateUser","channel":"lounge","time":1713932655000}
+{"cmd":"chat","nick":"alephb","uType":"user","userid":222543092071,"channel":"lounge","text":"【【宵崎奏】I miss you-哔哩哔哩】 https://b23.tv/CnXxPNt","level":100,"trip":"jYTF8t","color":"FAF","time":1713932673104}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"&zwj;重试","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932673349}
+{"nick":"whoami_5489","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":9087895216828,"isBot":false,"color":"D3E9DE","cmd":"updateUser","channel":"lounge","time":1713932685003}
+{"cmd":"onlineSet","nicks":["bacon_","MoveBot","Alice","whoami_9005"],"users":[{"channel":"loungee","isme":false,"nick":"bacon_","trip":"4bR/CS","uType":"mod","hash":"LCAlja7Clxs6kGO","level":999999,"userid":4142390254215,"isBot":false,"color":false},{"channel":"loungee","isme":false,"nick":"MoveBot","trip":"4bR/CS","uType":"mod","hash":"LCAlja7Clxs6kGO","level":999999,"userid":6511912217516,"isBot":false,"color":false},{"channel":"loungee","isme":false,"nick":"Alice","trip":"CrvQXO","uType":"user","hash":"PW5Oyg7pUMrFs9I","level":100,"userid":4111861729313,"isBot":false,"color":"000000"},{"isme":true,"isBot":false,"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"color":false,"channel":"loungee"}],"channel":"loungee","time":1713932696455}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"ECE0F4","cmd":"updateUser","channel":"loungee","time":1713932696456}
+{"cmd":"onlineRemove","userid":4142390254215,"nick":"bacon_","channel":"loungee","time":1713932696656}
+{"cmd":"onlineRemove","userid":6511912217516,"nick":"MoveBot","channel":"loungee","time":1713932696656}
+{"cmd":"onlineRemove","userid":4111861729313,"nick":"Alice","channel":"loungee","time":1713932696656}
+{"cmd":"onlineRemove","userid":8202053172409,"nick":"whoami_9005","channel":"loungee","time":1713932696656}
+{"cmd":"onlineSet","nicks":["bacon","24aRecordV26102","0x00","mbot","wwandrew","awa_ya","Radium_","jeb_","Alice","namenda","alephb","NOMAD","oilil","whoami_9005"],"users":[{"channel":"lounge","isme":false,"nick":"bacon","trip":"4bR/CS","uType":"mod","hash":"LCAlja7Clxs6kGO","level":999999,"userid":6077998396745,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"24aRecordV26102","trip":"","uType":"user","hash":"4V5e5/smP/nVvyg","level":100,"userid":3645669967105,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"0x00","trip":"FaAfFY","uType":"user","hash":"3u+nzpa4tAldctA","level":100,"userid":5193905258232,"isBot":false,"color":"C0D9D9"},{"channel":"lounge","isme":false,"nick":"mbot","trip":"hACkeR","uType":"mod","hash":"hTOkN6tlx+GorNX","level":999999,"userid":3084338405339,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"wwandrew","trip":"pwnuUa","uType":"mod","hash":"LNsAKoCSNWcF2cE","level":999999,"userid":8571078850581,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"awa_ya","trip":"YaAwA7","uType":"user","hash":"KZnWxX5saaoCpvL","level":100,"userid":9548271993657,"isBot":false,"color":"F1AD9D"},{"channel":"lounge","isme":false,"nick":"Radium_","trip":"0/JM7u","uType":"user","hash":"b/lfW6+w5MTuNRj","level":100,"userid":6423327606966,"isBot":false,"color":"C0FFEE"},{"channel":"lounge","isme":false,"nick":"jeb_","trip":"QwanOH","uType":"user","hash":"UVGh/YGUoYJirzj","level":100,"userid":5252335032840,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"Alice","trip":"CrvQXO","uType":"user","hash":"PW5Oyg7pUMrFs9I","level":100,"userid":3538939832654,"isBot":false,"color":"000000"},{"channel":"lounge","isme":false,"nick":"namenda","trip":"pwnuUa","uType":"mod","hash":"rzj+1UHTSlHP5Gp","level":999999,"userid":9116761646645,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"alephb","trip":"jYTF8t","uType":"user","hash":"E3cqRUJDFJDQs1a","level":100,"userid":222543092071,"isBot":false,"color":"FAF"},{"channel":"lounge","isme":false,"nick":"NOMAD","trip":"","uType":"user","hash":"nn/B6bRqBNJ6xbl","level":100,"userid":3384835132592,"isBot":false,"color":false},{"channel":"lounge","isme":false,"nick":"oilil","trip":"+o1aHr","uType":"user","hash":"diOQeHbvlXCXoQG","level":100,"userid":2933481564946,"isBot":false,"color":"ABCDEF"},{"isme":true,"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"ECE0F4"}],"channel":"lounge","time":1713932696657}
+{"cmd":"info","text":"whoami_9005 was moved into ?lounge","channel":"lounge","time":1713932696659}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"Welcome, whoami_9005!","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932696893}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"ADE1F5","cmd":"updateUser","channel":"lounge","time":1713932726457}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"FDCDC6","cmd":"updateUser","channel":"lounge","time":1713932756457}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"CDD4BD","cmd":"updateUser","channel":"lounge","time":1713932786458}
+{"cmd":"onlineAdd","nick":"__Instance__","trip":"","uType":"user","hash":"DTJKuOy+w+6HHxH","level":100,"userid":1688296807229,"isBot":false,"color":false,"channel":"lounge","time":1713932801684}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"早上好，__Instance__!","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932801947}
+{"cmd":"chat","nick":"whoami_9005","uType":"user","userid":8202053172409,"channel":"lounge","text":"__Instance__，你可曾知晓，没有值不值得，只有愿不愿意。","level":100,"trip":"xI/cmd","color":"CDD4BD","time":1713932804388}
+{"cmd":"chat","nick":"__Instance__","uType":"user","userid":1688296807229,"channel":"lounge","text":";peep 120","level":100,"time":1713932811865}
+{"cmd":"chat","nick":"awa_ya","uType":"user","userid":9548271993657,"channel":"lounge","text":"__Instance__ sleep 了 11时33分9秒, 欢迎回来(\\*￣ω￣)","level":100,"trip":"YaAwA7","color":"F1AD9D","time":1713932812101}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"E9FEF3","cmd":"updateUser","channel":"lounge","time":1713932816458}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"D8C5DE","cmd":"updateUser","channel":"lounge","time":1713932846459}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"D8F3BB","cmd":"updateUser","channel":"lounge","time":1713932876460}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"DCDFEE","cmd":"updateUser","channel":"lounge","time":1713932906460}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"D4E8FF","cmd":"updateUser","channel":"lounge","time":1713932936460}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"E7E9E6","cmd":"updateUser","channel":"lounge","time":1713932966460}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"CCD3B7","cmd":"updateUser","channel":"lounge","time":1713932996461}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"BEBDC7","cmd":"updateUser","channel":"lounge","time":1713933026460}
+{"cmd":"chat","nick":"oilil","uType":"user","userid":2933481564946,"channel":"lounge","text":"傻逼GitHub","level":100,"trip":"+o1aHr","color":"ABCDEF","time":1713933056137}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"B1FBE5","cmd":"updateUser","channel":"lounge","time":1713933056460}
+{"cmd":"chat","nick":"oilil","uType":"user","userid":2933481564946,"channel":"lounge","text":"为什么强制2FA","level":100,"trip":"+o1aHr","color":"ABCDEF","time":1713933063696}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"ACCFCB","cmd":"updateUser","channel":"lounge","time":1713933086460}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"E9ABBF","cmd":"updateUser","channel":"lounge","time":1713933116460}
+{"nick":"whoami_9005","trip":"xI/cmd","uType":"user","hash":"8oP46xqBtQVd+/v","level":100,"userid":8202053172409,"isBot":false,"color":"D3BDF7","cmd":"updateUser","channel":"lounge","time":1713933146460}
+{"cmd":"onlineRemove","userid":3384835132592,"nick":"NOMAD","channel":"lounge","time":1713933155336}
