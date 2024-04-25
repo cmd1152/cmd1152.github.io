@@ -22,7 +22,10 @@ function frontpage() {
 			"```JSON",
 			`{"cmd":"chat","nick":"MelonCmd","text":"hi yooooo","trip":"cmdTV+","color":"20201d","time":${new Date().getTime()-30}}`,
 			`{"cmd":"chat","nick":"MelonCmd","text":"Welcome!","trip":"cmdTV+","color":"20201d","time":${new Date().getTime()}}`,
-		].join('\n'))
+			"```",
+                        "or play file in Internet:"
+		].join('\n')),
+		"<input type=\"text\" id=\"url-input\" placeholder=\"Enter URL\" style=\"color:#000; width:calc(100% - 50px)\"><button onclick=\"loadHistoryUrl($id('url-input').value);\">Play</button>"
 	].join('\n')
 }
 

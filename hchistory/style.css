@@ -217,6 +217,7 @@ button.char {
 #chatform {
   width: 100%;
   border-top: 1px solid;
+  padding: 2px 8px 2px 8px
 }
 
 #chatinput {
@@ -415,16 +416,26 @@ ol ol {
 
 #timerange {
   width: calc(100% - 16px);
-  margin: 8px;
 }
 
-playbutton,clearbutton {
-  margin: 8px;
+playbutton,clearbutton,sharebutton {
   border: 1px solid;
   padding: 2px 5px 2px 5px;
+  line-height: 22px;
+  margin: 2px;
 }
 
 #timepre {
   position: absolute;
-  margin-left: 10px;
+}
+
+#sharebox {
+  overflow-wrap: break-word;
+  display: block;
+  padding: 2px 5px 2px 5px;
+  color: #fff;
+}
+
+#speed-selector {
+  margin-left: 8px;
 }
