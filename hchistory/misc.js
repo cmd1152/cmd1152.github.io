@@ -25,7 +25,7 @@ function frontpage() {
 			"```",
                         "or play file in Internet:"
 		].join('\n')),
-		"<input type=\"text\" id=\"url-input\" placeholder=\"Enter URL\" style=\"color:#000; width:calc(100% - 50px)\"><button onclick=\"loadHistoryUrl($id('url-input').value);\">Play</button>"
+		"<input type=\"text\" id=\"url-input\" placeholder=\"Enter URL\" style=\"color:#000; width:calc(100% - 100px)\"><button onclick=\"loadHistoryUrl($id('url-input').value);\">Play</button>"
 	].join('\n')
 }
 
