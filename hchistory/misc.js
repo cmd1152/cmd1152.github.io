@@ -136,27 +136,7 @@ function isAtBottom() {
 }
 
 function updateTitle() {
-	if (myChannel == '') {
-		unread = 0;
-		return;
-	}
-
-	if (windowActive && isAtBottom()) {
-		unread = 0;
-	}
-
-	var title;
-	if (myChannel) {
-		title = myChannel + " - hack.chat++";
-	} else {
-		title = "hack.chat++";
-	}
-
-	if (unread > 0) {
-		title = '(' + unread + ') ' + title;
-	}
-
-	document.title = title;
+	unread = 0;
 }
 
 

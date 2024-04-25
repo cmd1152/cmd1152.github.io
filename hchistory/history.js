@@ -7,7 +7,9 @@ var sharebox = $id('sharebox')
 var historys = {}
 var timepreview = $id('timepre')
 var timerange = $id('timerange')
+var defchannel = false
 setInterval(()=>{
+  document.title = historys.channel?`${historys.channel} - hack.chat++ replay`:"hack.chat++ replay"
   if ($('playbutton').innerText=="▶️ Play") return;
   if (!historys.history) return $('playbutton').click()
   updateTime()
@@ -38,6 +40,12 @@ function updateMessage() {
 }
 
 function pushJSON(json) {
+  if (JSON.parse(json).channel) {
+    if (JSON.parse(json).channel != defchannel) {
+      pushMessage({nick:'!',trip:'reply',text:`Now you in ?${JSON.parse(json).channel}`})
+      defchannel = JSON.parse(json).channel
+    }
+  }
   COMMANDS[JSON.parse(json).cmd].call(null, JSON.parse(json), json);
   window.scrollTo(0, document.body.scrollHeight);
 }
@@ -47,6 +55,11 @@ function LoadHistory(history) {
     historys.history = history.split("\n").map(a=>{return a.trim()}).filter(a=>{return a.startsWith("{") && a.endsWith("}")})
     timerange.min = historys.min = Math.floor(JSON.parse(historys.history[0]).time/100)
     timerange.max = historys.max = Math.floor(JSON.parse(historys.history[historys.history.length-1]).time/100)
+    let channell = historys.history.filter(a=>{return JSON.parse(a).channel})
+    if (channell.length > 0) {
+      historys.channel = [...new Set(channell.map(a=>{return JSON.parse(a).channel}).filter(a=>{return a}))].join(", ")
+    } else historys.channel = "*Unknown Channel*"
+    defchannel=""
     if (historys.history.length > 1152) pushMessage({nick:'!',text:'More than 1152 messages, performance may decrease!\nIf you find that there is a problem with the speed, please use high speed (insufficient performance, speed to make up for :D)'})
     pushMessage({nick:'*',text:`Loaded, click \`▶️ Play\` to play... (Length: ${historys.history.length})`})
     updateTime()
@@ -76,6 +89,7 @@ function stopall() {
   timerange.max = timerange.min = timerange.value = 0
   updateTime()
   pushFrontPage()
+  defchannel = ''
 }
 i18ntranslate=(a)=>{return a}
 
