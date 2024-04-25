@@ -170,7 +170,7 @@ function share() {
   window.scrollTo(0, document.body.scrollHeight);
   let shareurl = window.location.origin + window.location.pathname
   let sharesearch = {}
-  sharesearch.time = timerange.value
+  sharesearch.time = timerange.value;
   (async()=>{
     try {
       const formData = new FormData();
