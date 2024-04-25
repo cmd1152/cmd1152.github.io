@@ -173,6 +173,14 @@ function share() {
   sharesearch.time = timerange.value;
   (async()=>{
     try {
+      if (!document.getElementById('fileInput')) {
+        if (search.url) {
+          sharesearch.url = search.url
+          return doneShare()
+        }
+        alert(`Failed to Share`)
+        sharebutton.innerText == "★ Share"
+      }
       const file = document.getElementById('fileInput').files[0]
       const formData = new FormData();
       formData.append('reqtype', 'fileupload');
@@ -185,7 +193,7 @@ function share() {
       });
 
       if (response.ok) {
-        sharesearch.url = await response.text();
+         = await response.text();
         doneShare()
       } else {
         throw new Error(`Failed to Share: Failed to upload: ${await response.text()}`);
