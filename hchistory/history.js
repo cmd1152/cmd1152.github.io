@@ -35,7 +35,7 @@ function updateMessage() {
   //？什么弱智更新方法，历史记录一多卡死你妈的
   //好，加个 .slice(-152)
   if (!historys.history) return;
-  historys.history.filter(his=>{return JSON.parse(his).time <= parseInt(timerange.value+'99')}).slice(-152).forEach(his=>{pushJSON(his)})
+  historys.history.filter(his=>{return JSON.parse(his).time <= parseInt(timerange.value+'99')}).slice(-50).forEach(his=>{pushJSON(his)})
   window.scrollTo(0, document.body.scrollHeight);
 }
 
