@@ -43,7 +43,7 @@ function updateMessage() {
 function pushJSON(json) {
   if (JSON.parse(json).channel) {
     if (JSON.parse(json).channel != defchannel) {
-      pushMessage({nick:'!',trip:'reply',text:`Now you in ?${JSON.parse(json).channel}`})
+      pushMessage({nick:'!',trip:'replay',text:`Now you in ?${JSON.parse(json).channel}`})
       defchannel = JSON.parse(json).channel
     }
   }
