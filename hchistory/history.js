@@ -173,6 +173,7 @@ function share() {
   sharesearch.time = timerange.value;
   (async()=>{
     try {
+      const file = document.getElementById('fileInput').files[0]
       const formData = new FormData();
       formData.append('reqtype', 'fileupload');
       formData.append('userhash', '');
