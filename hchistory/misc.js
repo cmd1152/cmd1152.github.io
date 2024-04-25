@@ -25,7 +25,10 @@ function frontpage() {
 			"```",
                         "or play file in Internet:"
 		].join('\n')),
-		"<input type=\"text\" id=\"url-input\" placeholder=\"Enter URL\" style=\"color:#000; width:calc(100% - 100px)\"><button onclick=\"loadHistoryUrl($id('url-input').value);\">Play</button>"
+		"<input type=\"text\" id=\"url-input\" placeholder=\"Enter URL\" style=\"color:#000; width:calc(100% - 100px)\"><button onclick=\"loadHistoryUrl($id('url-input').value);\">Play</button>",
+		md.render([
+			"If you want to share a local file with timestamps, please don't rush to click `▶️ Play` after importing it. Instead, click `★ Share` to obtain a web link. Then, click on the web link to switch the file to a web-based one. Now, you can encounter the desired timestamp during playback, click `★ Share` to generate a web URL pointing to that specific timestamp. Finally, share this URL with your friends. If you attempt to share a local file URL with timestamps, you will only receive an error message."
+		].join('\n'))
 	].join('\n')
 }
 
