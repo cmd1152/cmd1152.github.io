@@ -171,34 +171,29 @@ function share() {
   let shareurl = window.location.origin + window.location.pathname
   let sharesearch = {}
   sharesearch.time = timerange.value
-  if (search.url) {
-    sharesearch.url = search.url
-    doneShare()
-  } else {
-    (async()=>{
-      try {
-        const formData = new FormData();
-        formData.append('reqtype', 'fileupload');
-        formData.append('userhash', '');
-        formData.append('fileToUpload', file);
+  (async()=>{
+    try {
+      const formData = new FormData();
+      formData.append('reqtype', 'fileupload');
+      formData.append('userhash', '');
+      formData.append('fileToUpload', file);
 
-        const response = await fetch('https://camo.hach.chat/?proxyUrl=https://catbox.moe/user/api.php', {
-          method: 'POST',
-          body: formData
-        });
+      const response = await fetch('https://camo.hach.chat/?proxyUrl=https://catbox.moe/user/api.php', {
+        method: 'POST',
+        body: formData
+      });
 
-        if (response.ok) {
-          sharesearch.url = await response.text();
-          doneShare()
-        } else {
-          throw new Error(`Failed to Share: Failed to upload: ${await response.text()}`);
-        }
-      } catch (e) {
-        sharebutton.innerText == "★ Share"
-        alert(`Failed to Share: ${e.message || e}`)
+      if (response.ok) {
+        sharesearch.url = await response.text();
+        doneShare()
+      } else {
+        throw new Error(`Failed to Share: Failed to upload: ${await response.text()}`);
       }
-    })()
-  }
+    } catch (e) {
+      sharebutton.innerText == "★ Share"
+      alert(`Failed to Share: ${e.message || e}`)
+    }
+  })()
   function doneShare() {
     sharebutton.innerText = "★ Hide URL"
     sharebox.innerText = sharebox.href = `${shareurl}?${updateQueryString(sharesearch)}`
