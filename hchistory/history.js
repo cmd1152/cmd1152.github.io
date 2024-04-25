@@ -1,6 +1,7 @@
 ﻿$('playbutton').onclick = () => {
   $('playbutton').innerText=$('playbutton').innerText=="▶️ Play"?"■ Stop":"▶️ Play"
 }
+document.body.scrollTop=Infinity
 $('playbutton').click()
 var sharebutton = $('sharebutton')
 var sharebox = $id('sharebox')
