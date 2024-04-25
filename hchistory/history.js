@@ -180,6 +180,7 @@ function share() {
         }
         alert(`Failed to Share`)
         sharebutton.innerText == "★ Share"
+        return
       }
       const file = document.getElementById('fileInput').files[0]
       const formData = new FormData();
@@ -193,7 +194,7 @@ function share() {
       });
 
       if (response.ok) {
-         = await response.text();
+        sharesearch.url = await response.text();
         doneShare()
       } else {
         throw new Error(`Failed to Share: Failed to upload: ${await response.text()}`);
