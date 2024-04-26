@@ -17,7 +17,7 @@ setInterval(()=>{
   if (!historys.history) return $('playbutton').click()
   updateTime()
   updateMessage()
-  let newValue = Math.min(parseInt(timerange.value)+parseInt($id('speed-selector').value),parseInt(timerange.max))
+  let newValue = Math.max(parseInt(timerange.min),Math.min(parseInt(timerange.value)+parseInt($id('speed-selector').value),parseInt(timerange.max)))
   if (timerange.value == newValue) {
     timerange.value = timerange.min
     return $('playbutton').click()
