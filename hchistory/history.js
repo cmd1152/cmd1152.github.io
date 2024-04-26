@@ -1,4 +1,6 @@
-﻿$('playbutton').onclick = () => {
+﻿var camo = 'https://camo.hach.chat/?proxyUrl='
+
+$('playbutton').onclick = () => {
   $('playbutton').innerText=$('playbutton').innerText=="▶️ Play"?"■ Stop":"▶️ Play"
 }
 document.body.scrollTop=Infinity
@@ -130,23 +132,29 @@ function updateQueryString(obj) {
 }
 let search = parseQueryString(location.search)
 
-if (search.url) {
-  pushMessage({nick:'*',text:`Loading file: ${search.url}`})
-  loadHistoryUrl(search.url,search.time)
+if (search.u) {
+  pushMessage({nick:'*',text:`Loading file: ${search.u}\nPlease wait a few minutes, do not close or leave this webpage in the background`})
+  if (search.u.startsWith("cb/")) {
+    loadHistoryUrl(camo + 'https://files.catbox.moe/' + search.u.replace("cb/",""),search.t)
+  } else loadHistoryUrl(search.u,search.t)
 }
 function loadHistoryUrl(weburl,time=false) {
   fetch(weburl)
     .then(response => {
       if (!response.ok) {
-        return pushMessage({nick:'!',text:`Network response was not ok`})
+        pushMessage({nick:'!',text:`file response was not ok`})
       }
     return response.text();
   })
   .then(data => {
+    if (data == "404! not found!") {
+      pushMessage({nick:'!',text:`CB Url Failed`})
+      return;
+    }
     LoadHistory(data.trim())
     setTimeout(()=>{
-      if (parseInt(time) && historys.history) {
-        timerange.value = parseInt(time)
+      if (parseInt(time, 36) && historys.history) {
+        timerange.value = parseInt(time, 36)
         updateTime()
         updateMessage()
       }
@@ -157,7 +165,7 @@ function loadHistoryUrl(weburl,time=false) {
   })
 }
 
-function share() {
+function share(_time=false) {
   if (sharebutton.innerText == "★ Shareing...") return;
   if (sharebutton.innerText == "★ Hide URL") {
     sharebutton.innerText = "★ Share"
@@ -172,12 +180,12 @@ function share() {
   window.scrollTo(0, document.body.scrollHeight);
   let shareurl = window.location.origin + window.location.pathname
   let sharesearch = {}
-  sharesearch.time = timerange.value;
+  sharesearch.t = parseInt(timerange.value).toString(36);
   (async()=>{
     try {
       if (!document.getElementById('fileInput')) {
-        if (search.url) {
-          sharesearch.url = search.url
+        if (search.u) {
+          sharesearch.u = search.u
           return doneShare()
         }
         alert(`Failed to Share`)
@@ -190,13 +198,13 @@ function share() {
       formData.append('userhash', '');
       formData.append('fileToUpload', file);
 
-      const response = await fetch('https://camo.hach.chat/?proxyUrl=https://catbox.moe/user/api.php', {
+      const response = await fetch(camo + 'https://catbox.moe/user/api.php', {
         method: 'POST',
         body: formData
       });
 
       if (response.ok) {
-        sharesearch.url = await response.text();
+        sharesearch.u = (await response.text()).replace("https://files.catbox.moe/","cb/");
         doneShare()
       } else {
         throw new Error(`Failed to Share: Failed to upload: ${await response.text()}`);
@@ -208,6 +216,7 @@ function share() {
   })()
   function doneShare() {
     sharebutton.innerText = "★ Hide URL"
+    if (_time !== false) sharesearch.t = _time
     sharebox.innerText = sharebox.href = `${shareurl}?${updateQueryString(sharesearch)}`
     document.body.style.marginBottom = $id('footer').offsetHeight + 'px';
     window.scrollTo(0, document.body.scrollHeight);

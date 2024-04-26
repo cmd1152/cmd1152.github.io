@@ -7,9 +7,20 @@ function frontpage() {
 		document.getElementById('fileInput').addEventListener('change', function(event) {
 			const file = event.target.files[0];
 			const reader = new FileReader();
-
+			pushMessage({nick:'*',text:`Update as CB File...`})
 			reader.onload = function(event) {
 				LoadHistory(event.target.result.trim())
+				share(0)
+				let w = setInterval(()=>{
+					if (sharebox.innerText) {
+						window.location.href=sharebox.innerText
+						sharebox.innerText="[Done] Updated as CB File"
+					}
+				},100)
+				setTimeout(()=>{
+					clearInterval(w)
+					pushMessage({nick:'!',text:`It takes a long time to upload as CB file?\nCheck your network connection and try again!`})
+				},5000)
 			};
 
 			reader.readAsText(file); 
