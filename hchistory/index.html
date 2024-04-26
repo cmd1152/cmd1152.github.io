@@ -35,19 +35,17 @@
         <input type="range" min="0" max="0" value="0" id="timerange">
         <playbutton></playbutton><clearbutton onclick="stopall()">× Clear</clearbutton><b id="playinfo">----/--/-- --:--:--</b>
         <select id="speed-selector">
+          <option value="false" disabled="disabled">Upend</option>
+          <option value="5">x-5</option>
+          <option value="-2">x-2</option>
+          <option value="-1">x-1</option>
+          <option value="false" disabled="disabled">Normal</option>
           <option value="1" selected>x1</option>
           <option value="2">x2</option>
           <option value="5">x5</option>
           <option value="10">x10</option>
           <option value="20">x20</option>
           <option value="30">x30</option>
-          <option value="50">x50</option>
-          <option value="100">x100</option>
-          <option value="200">x200</option>
-          <option value="500">x500</option>
-          <option value="1000">x1000</option>
-          <option value="2000">x2000</option>
-          <option value="5000">x5000</option>
         </select>
         <sharebutton onclick="share()">★ Share</sharebutton>
         <a href="" id="sharebox"></a>
