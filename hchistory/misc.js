@@ -15,6 +15,7 @@ function frontpage() {
 					if (sharebox.innerText) {
 						window.location.href=sharebox.innerText
 						sharebox.innerText="[Done] Updated as CB File"
+						clearInterval(w)
 					}
 				},100)
 				setTimeout(()=>{
