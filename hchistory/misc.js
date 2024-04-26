@@ -21,7 +21,7 @@ function frontpage() {
 				setTimeout(()=>{
 					clearInterval(w)
 					pushMessage({nick:'!',text:`It takes a long time to upload as CB file?\nCheck your network connection and try again!`})
-				},5000)
+				},10000)
 			};
 
 			reader.readAsText(file); 
