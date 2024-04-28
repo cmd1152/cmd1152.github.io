@@ -229,4 +229,5 @@ document.addEventListener('wheel', (event) => {
   event.preventDefault();
   timerange.value = parseInt(timerange.value) + (event.deltaY > 0 ? 100 : -100);
   timerange.value = Math.min(Math.max(parseInt(timerange.value), parseInt(timerange.min)), parseInt(timerange.max));
+  updateMessage()
 }, { passive: false });
