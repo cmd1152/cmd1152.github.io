@@ -223,3 +223,10 @@ function share(_time=false) {
     window.scrollTo(0, document.body.scrollHeight);
   }
 }
+
+//我tm是天才
+document.addEventListener('wheel', (event) => {
+  event.preventDefault();
+  timerange.value = parseInt(timerange.value) + (event.deltaY > 0 ? 100 : -100);
+  timerange.value = Math.min(Math.max(parseInt(timerange.value), parseInt(timerange.min)), parseInt(timerange.max));
+}, { passive: false });
