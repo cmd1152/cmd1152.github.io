@@ -38,7 +38,7 @@ function updateMessage() {
   //？什么弱智更新方法，历史记录一多卡死你妈的
   //好，加个 slice
   if (!historys.history) return;
-  var prol = historys.history.filter(his=>{return JSON.parse(his).time <= parseInt(timerange.value+'99') && !["chat","emote","info","warn","onlineSet","onlineAdd","onlineRemove"].includes(JSON.parse(his).cmd)}).length || 0
+  var prol = Math.min(historys.history.filter(his=>{return JSON.parse(his).time <= parseInt(timerange.value+'99') && !["chat","emote","info","warn","onlineSet","onlineAdd","onlineRemove"].includes(JSON.parse(his).cmd)}).length || 0,50)
   defchannel = false
   historys.history.filter(his=>{return JSON.parse(his).time <= parseInt(timerange.value+'99')}).slice(-30-prol).forEach(his=>{pushJSON(his)})
   window.scrollTo(0, document.body.scrollHeight);
