@@ -1,4 +1,4 @@
-﻿COMMANDS.notems = {
+﻿COMMANDS.killme = {
     run: (args) => {
         return new Promise(resolve => {
             pushMessage("GoodBye, World!");
