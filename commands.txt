@@ -14,4 +14,3 @@ asciimation
 jaj
 hc-list
 hc-historyexp
-killme
