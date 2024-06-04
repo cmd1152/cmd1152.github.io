@@ -442,4 +442,8 @@ playbutton,clearbutton,sharebutton {
 
 #playinfo {
   margin-left: 8px;
+  background: unset;
+  border: 0;
+  width: 125px;
+  outline: none;
 }

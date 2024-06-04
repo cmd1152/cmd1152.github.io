@@ -26,7 +26,7 @@ setInterval(()=>{
 },100)
 
 function updateTime() {
-  $id("playinfo").innerText = formatTimestamp(parseInt(timerange.value+'99'))
+  $id("playinfo").value = formatTimestamp(parseInt(timerange.value+'99'))
   document.body.style.marginBottom = $id('footer').offsetHeight + 'px';
   if (sharebutton.innerText == "★ Hide URL") sharebutton.innerText = "★ New Share (now URL is old)"
 }
@@ -233,3 +233,13 @@ document.addEventListener('wheel', (event) => {
   updateMessage()
   updateTime()
 }, { passive: false });
+
+
+$('#playinfo').addEventListener('blur', function(event) {
+  let newTime = new Date(event.target.value).getTime();
+  if (newTime <= parseInt(timerange.max)*100 && newTime >= parseInt(timerange.min)*100) {
+    timerange.value = Math.floor(newTime/100);
+  }
+  updateTime();
+  updateMessage();
+});
