@@ -50,7 +50,7 @@ function vF(r) {
   }, 2000)
 }
 
-if (!confirm("本文记录了一个臭名昭著的Googol的所作所为，其中，Googol不受到大部分人喜欢，如果并非必要，阅读本文可能会因为Googol而破坏您一整天的好心情\n（点击 确定 以继续阅读，点击 取消 关闭页面）")) {
+if (!confirm("本文记录了一个臭名昭著的Googol的所作所为，其中，Googol不受到大部分人喜欢，如果并非必要，阅读本文可能会因为Googol而破坏您一整天的好心情\n注：本文存在大量以其人之道还治其人之身的内容，比如MelonCmd !== cmd1152（就像 Googol 不是 Gongxiang01 一样可笑）\n（点击 确定 以继续阅读，点击 取消 关闭页面）")) {
   window.close();
   history.back();
   document.clear();
