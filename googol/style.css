@@ -73,23 +73,24 @@
   background-size: cover;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: right 0.2s,top 0.3s,height 0.3s,z-index 1s;
+  transition: all 1s;
   background-color: #292824;
   overflow: hidden;
   padding: 8px;
   overflow-wrap: break-word;
   font-family: "DejaVu Sans Mono",monospace;
   font-size: 12px;
+  left: auto;
+  transition: all 1s;
 }
 
 .file-open {
-  left: 0 !important;
   z-index: 1;
-  top: 0px !important;
-  height: 100vh;
-  overflow-y: scroll;
-  width: unset;
-  right: 0;
+  animation: openFile 2s ease-in-out forwards;
+}
+.file-close {
+  z-index: 1;
+  animation: closeFile 2s ease-in-out forwards;
 }
 
 @media (max-width: 600px) {
@@ -102,4 +103,60 @@
   margin: 0;
   padding-bottom: 6px;
   border-bottom: solid 1px #eee;
+}
+
+@keyframes openFile {
+  0% {
+    right: 0;
+    left: auto;
+  }
+  49% {
+    right: -100%;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
+  50% {
+    right: -100%;
+    left: 0;
+    top: 100vh;
+    height: 100vh;
+    width: auto;
+  }
+  100% {
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: auto;
+    overflow-y: scroll;
+  }
+}
+
+@keyframes closeFile {
+  0% {
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: auto;
+    overflow-y: scroll;
+  }
+  50% {
+    right: -100%;
+    left: 0;
+    top: 100vh;
+    height: 100vh;
+    width: auto;
+  }
+  51% {
+    right: -100%;
+    left: auto;
+    top: auto;
+    height: auto;
+  }
+  100% {
+    right: 0;
+    left: auto;
+  }
 }

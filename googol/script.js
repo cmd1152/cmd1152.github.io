@@ -3,9 +3,14 @@ document.querySelectorAll(".file").forEach((file, i)=>{
   file.style.top = i*40 + 'px';
   file.addEventListener('click', (event) => {
     file.classList.add("file-open");
-    file.focus();
   });
-  file.addEventListener('blur', (event) => {
-    file.classList.remove("file-open");
+  document.addEventListener('click', function(event) {
+    if (!file.contains(event.target) && [...file.classList].includes("file-open")) {
+      file.classList.add('file-close');
+      file.classList.remove('file-open');
+      setTimeout(()=>{
+        file.classList.remove('file-close');
+      }, 2000)
+    }
   });
 })
