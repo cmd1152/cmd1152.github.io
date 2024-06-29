@@ -65,14 +65,16 @@
 
 .file {
   position: absolute;
-  width: 100%;
+  width: 90%;
   height: 100px;
   background-size: cover;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: right 1s,top 0.3s,height 0.3s,z-index 2s;
+  transition: right 0.2s,top 0.3s,height 0.3s,z-index 1s;
   right: -360px;
   background-color: #1e5c64;
+  overflow: hidden;
+  padding: 8px;
 }
 
 .file-1 {
@@ -90,10 +92,11 @@
 }
 
 .file:hover {
-  right:-10px;
+  right:0px;
   z-index:1;
   top: 0px;
   height: 100vh;
+  overflow-y: scroll;
 }
 
 @media (max-width: 1000px) {
