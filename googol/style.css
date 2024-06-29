@@ -66,29 +66,30 @@
 .file {
   position: absolute;
   width: 90%;
-  height: 100px;
+  height: 20px;
   background-size: cover;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: right 0.2s,top 0.3s,height 0.3s,z-index 1s;
-  right: -360px;
   background-color: #1e5c64;
   overflow: hidden;
   padding: 8px;
+  overflow-wrap: break-word;
 }
 
 .file-1 {
   top: 0;
+  right: -280px;
 }
 
 .file-2 {
   top: 40px;
-  right: -340px;
+  right: -260px;
 }
 
 .file-3 {
   top: 80px;
-  right: -320px;
+  right: -240px;
 }
 
 .file:hover {
@@ -103,4 +104,10 @@
   .file-stack {
     display: none;
   }
+}
+
+.file-title {
+  margin: 0;
+  padding-bottom: 8px;
+  border-bottom: solid 1px #eee;
 }
