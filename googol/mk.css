@@ -1,0 +1,51 @@
+﻿code {
+  background: #00000020;
+  border-radius: 2px;
+  border: solid 2px #00000030;
+  padding: 2px 4px;
+  font-size: 90%;
+  font-family: monospace;
+}
+* {
+  overflow-wrap: break-word;
+}
+blockquote {
+  padding: 3px 10px;
+  margin: 3px;
+  border-left: 5px solid #4e4e4e
+}
+p,ul {
+  margin: 0;
+}
+pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #797979;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #00000020;
+  border: 1px solid #000;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  tab-size: 4;
+  font-family: monospace;
+}
+
+html,body {
+  background: #20201d;
+  color: #a6a28c;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #e8e4cf;
+}
+
+* {
+  font-family: "DejaVu Sans Mono",monospace;
+  font-size: 12px;
+}
