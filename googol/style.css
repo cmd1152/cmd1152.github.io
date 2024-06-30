@@ -121,7 +121,7 @@
   animation: closeFile 2s ease-in-out forwards;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 730px) {
   .file-stack {
     display: none;
   }
