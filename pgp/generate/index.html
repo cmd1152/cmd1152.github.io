@@ -67,7 +67,6 @@
         let pk = await openpgp.readKey({ armoredKey: key.publicKey });
         $("#textinput-holder").innerHTML = `
           <h4>密钥已成功创建</h4>
-          <label>公钥ID：${Array.prototype.map.call(new TextEncoder().encode(pk.keyPacket.keyID.bytes), x => ('00' + x.toString(16)).slice(-2)).join('').toUpperCase()}</label>
           <p>公钥（Public Key），你可以上传到<a href="https://keys.openpgp.org">公钥服务器</a>后分享公钥ID，其他人就可以在公钥服务器上通过你的公钥ID搜索到你的公钥</p>
           <textarea>${key.publicKey}</textarea>
           <p>私钥（Private Key），和名称一样，你需要妥善保管，不要让其他人知道，这是你签名所需要的凭证</p>
