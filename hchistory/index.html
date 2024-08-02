@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>(Initing..) hack.chat++ replay</title>
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"> -->
+
+  <link rel="stylesheet" href="style.css">
+  <link id="scheme-link" rel="stylesheet" href="schemes/atelier-dune.css">
+
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/remarkable-katex/remarkableKatex.min.js"></script>
+
+  <script src="vendor/hljs/highlight.min.js"></script>
+  <link id="highlight-link" rel="stylesheet" href="vendor/hljs/styles/hybrid.min.css">
+  <script src="vendor/remarkable/remarkable.min.js"></script>
+
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+  <audio style="display: none" id="notify-sound" preload="auto" src="audio/notify.mp3">
+    <source src="audio/notify.mp3" type="audio/ogg">
+  </audio>
+  <article class="container">
+    <div id="messages" class="messages"></div>
+  </article>
+  <footer id="footer">
+    <div class="container" style="display: flex">
+      <form id="chatform" class="message">
+        <input type="range" min="0" max="0" value="0" id="timerange">
+        <playbutton></playbutton><clearbutton onclick="stopall()">× Clear</clearbutton><input id="playinfo" value="----/--/-- --:--:--"></input>
+        <select id="speed-selector">
+          <option value="false" disabled="disabled">Upend</option>
+          <option value="-5">x-5</option>
+          <option value="-2">x-2</option>
+          <option value="-1">x-1</option>
+          <option value="false" disabled="disabled">Normal</option>
+          <option value="1" selected>x1</option>
+          <option value="2">x2</option>
+          <option value="5">x5</option>
+          <option value="10">x10</option>
+          <option value="20">x20</option>
+          <option value="30">x30</option>
+        </select>
+        <sharebutton onclick="share()">★ Share</sharebutton>
+        <a href="" id="sharebox"></a>
+      </form>
+    </div>
+  </footer>
+  <nav id="sidebar">
+    <div id="sidebar-content" class="hidden">
+      <div style="display: flex; justify-content: space-between;">
+        <div>
+          <h4 tr>Settings</h4>
+        </div>
+        <a id="sidebar-close" href="javascript:;">x</a>
+      </div>
+      <p>
+        <input id="pin-sidebar" type="checkbox">
+        <label for="pin-sidebar" tr>Pin sidebar</label>
+      </p>
+      <p>
+        <input id="joined-left" type="checkbox" checked>
+        <label for="joined-left" tr>Join/left notify</label>
+      </p>
+      <p>
+        <input id="parse-latex" type="checkbox" checked>
+        <label for="parse-latex" tr>Allow LaTeX</label>
+      </p>
+      <p>
+        <input id="syntax-highlight" type="checkbox" checked>
+        <label for="syntax-highlight" tr>Allow Highlight</label>
+      </p>
+      <p>
+        <input id="allow-imgur" type="checkbox">
+        <label for="allow-imgur" title="Embed images like: ![Title](https://i.imgur.com/image.png)" tr>Allow Images</label>
+      </p>
+      <p>
+        <input id="allow-all-images" type="checkbox">
+        <label for="allow-all-images"
+          title="Check allow images to set this. If this is not checked, only images hosted at trusted domain names can be rendered. Note that this may enable IP grabbers to grab your IP address."
+          tr>Allow All Images (Not Recommended)</label>
+      </p>
+      <p>
+        <input id="auto-fold" type="checkbox" checked>
+        <label for="auto-fold" tr>Fold Long Messages</label>
+      </p>
+      <hr>
+      <p>
+      <h4 tr>Color scheme</h4>
+      <select id="scheme-selector"></select>
+      </p>
+      <p>
+      <h4 tr>Highlight scheme</h4>
+      <select id="highlight-selector"></select>
+      </p>
+    </div>
+  </nav>
+  <!-- build:js index.js -->
+  <script src="utils.js"></script>
+  <script src="misc.js"></script>
+  <script src="sidebar.js"></script>
+  <script src="client.js"></script>
+  <script src="history.js"></script>
+  <!-- /build -->
+</body>
+
+</html>

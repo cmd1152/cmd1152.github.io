@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Good Privacy">
+  <title>PGP</title>
+  <script src="../openpgp.min.js"></script>
+</head>
+<body>
+  <p>要创建一个PGP密钥，你需要选择密钥算法，创建密钥后就可以上传到根服务器或者用于签名你的notems聊天消息<p>
+  <div id="textinput-holder">
+     <div>
+       <label for="options-type">密钥算法（建议ECC，因为RSA一般来说是给根密钥用的）</label>
+       <select name="options-type" onchange="keyAlgorithmChanged(this)" id="options-type">
+         <option value="ecc">ECC</option>
+         <option value="rsa">RSA</option>
+       </select>
+     </div>
+
+     <div id="key-size-select-holder">
+       <label for="options-key-size">密钥长度</label>
+       <select name="options-key-size" id="options-key-size">
+         <option value="4096">4096 bits</option>
+         <option value="2048">2048 bits</option>
+       </select>
+       <p>警告：RSA创建需要1分钟或者更长的时间</p>
+     </div>
+
+     <div>
+       <label for="options-name">名称，建议用自己的用户名（可选）</label>
+       <input id="options-name"></textarea>
+     </div>
+
+     <div>
+       <label for="options-email">邮箱，建议用自己的邮箱（可选）</label>
+       <input type="email" id="options-email">
+     </div>
+
+     <div>
+       <label for="options-passphrase">使用密码保护私钥，建议输入，避免秘钥被盗时其他人滥用（可选）</label>
+       <input type="text" id="options-passphrase">
+     </div>
+     <button id="gener" onclick="generate()">准备好了？创建！</button><a href="../"><button>取消创建</button></a>
+  </div>
+
+  <script>
+    const $ = o => document.querySelector(o);
+    const $_ = o => document.querySelectorAll(o)
+    function keyAlgorithmChanged(sel) {
+      $("#key-size-select-holder").style.display = sel.value == "rsa" ? "block":"none"
+    }
+    keyAlgorithmChanged($("#options-type"));
+    async function generate() {
+      $("#gener").innerText = "创建中...";
+      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
+      try {
+        let passphrase = $("#options-passphrase").value!=="" ? { passphrase:$("#options-passphrase").value}:{};
+        const key = await openpgp.generateKey({
+          type: $("#options-type").value, // ECC algorithm
+          curve: $("#options-type").value=="ecc"?'curve25519':$("#options-key-size").value, // ECC curve type
+          userIDs: [{ name: $("#options-name").value, email: $("#options-email").value }],
+          ...passphrase,
+          format: 'armored' // output armored keys
+        });
+        let pk = await openpgp.readKey({ armoredKey: key.publicKey });
+        $("#textinput-holder").innerHTML = `
+          <h4>密钥已成功创建</h4>
+          <label>公钥ID：${Array.prototype.map.call(new TextEncoder().encode(pk.keyPacket.keyID.bytes), x => ('00' + x.toString(16)).slice(-2)).join('').toUpperCase()}</label>
+          <p>公钥（Public Key），你可以上传到<a href="https://keys.openpgp.org">公钥服务器</a>后分享公钥ID，其他人就可以在公钥服务器上通过你的公钥ID搜索到你的公钥</p>
+          <textarea>${key.publicKey}</textarea>
+          <p>私钥（Private Key），和名称一样，你需要妥善保管，不要让其他人知道，这是你签名所需要的凭证</p>
+          <textarea>${key.privateKey}</textarea>
+          <p>吊销证书（revocation Certificate），如果你的私钥被泄露，这个用于告诉其他用户公钥不太可信，这个和秘钥一样重要，任何人拥有他都可以让你的私钥失效！</p>
+          <textarea>${key.revocationCertificate}</textarea>
+          <p>密码保护（passphrase），如果你刚刚输入了 “使用密码保护私钥（可选）” 那一栏，那么私钥必须通过此密码解密才可以使用</p>
+          <textarea>${$("#options-passphrase").value}</textarea>
+          <p></p>
+          <p>保存好上面的4个重要内容了吗？现在你可以<a href="../"><button>回到主页</button></a>或者<a href="./"><button>重新创建</button></a></p>
+        `
+      } catch (err) {
+        alert(`创建失败了，请检查你的数据是否合法\n${err.message||err||"未知错误"}`)
+        $("#gener").innerText = "准备好了？创建！";
+        [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
+      } 
+    }
+  </script>
+</body>
+
+</html>

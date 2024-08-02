@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pretty Good Privacy">
+  <title>PGP</title>
+  <script src="openpgp.min.js"></script>
+</head>
+<body>
+  <p>本项目用于Note.ms的消息签名，用于防止Note.ms聊天室内的言论被篡改<p>
+  <p>没有PGP密钥？<a href="./generate"><button>创建一个！</button></a><p>
+  <hr>
+  <h2>签名文本</h2>
+  <p>把要签名的文本粘贴到输入框</p>
+  <textarea id="wait-sign"></textarea>
+  <p>粘贴你的私钥<p>
+  <textarea id="pr"></textarea>
+  <p>如果你的私钥受密码保护，请粘贴密码，否则请忽略</p>
+  <input type="text" id="ps">
+  <p></p>
+  <button id="sign" onclick="sign()">签名</button>
+  <p>签名完成后，把下面输出附赠在你的聊天内容后面，并且注明地址是这里，这可以让有你公钥的人验证你的消息</p>
+  <textarea id="sign-output">..签名结果输出..</textarea>
+  <h2>验证文本签名</h2>
+  <p>把文本粘贴到输入框</p>
+  <textarea id="signed"></textarea>
+  <p>把文本的PGP签名粘贴到输入框</p>
+  <textarea id="pgp-signed"></textarea>
+  <p>把文本发布者的公钥粘贴到输入框</p>
+  <textarea id="p-signed"></textarea>
+  <p></p>
+  <button id="csign" onclick="csign()">检查签名</button>
+
+  <script>
+    const $ = o => document.querySelector(o);
+    const $_ = o => document.querySelectorAll(o)
+
+    async function sign() {
+      $("#sign").innerText = "签名中...";
+      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
+      try {
+        let prKey = await openpgp.readPrivateKey({ armoredKey: $("#pr").value })
+        if ($("#ps").value !== "") {
+          prKey = await openpgp.decryptKey({
+            privateKey: prKey,
+            passphrase: $("#ps").value
+          });
+        }
+        let msg = await openpgp.createMessage({ text: $("#wait-sign").value });
+        let detachedSignature = await openpgp.sign({
+          message:msg,
+          signingKeys: prKey,
+        });
+        $("#sign-output").value = detachedSignature;
+
+      } catch (e) {
+        alert(`签名失败，请检查私钥和私钥密码是否正确\n${e.message||e||"未知错误"}`);
+      }
+      $("#sign").innerText = "签名";
+      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
+    }
+
+    async function csign() {
+      $("#csign").innerText = "验证签名中...";
+      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
+      try {
+        let puKey = await openpgp.readKey({ armoredKey: $("#p-signed").value })
+        let msg = await openpgp.createMessage({ text: $("#signed").value });
+        const signature = await openpgp.readSignature({
+          armoredSignature: $("#pgp-signed").value // parse detached signature
+        });
+        const verificationResult = await openpgp.verify({
+          message: msg, // Message object
+          signature,
+          verificationKeys: puKey
+        });
+        const { verified, keyID } = verificationResult.signatures[0];
+        try {
+          await verified; // throws on invalid signature
+          alert(`此签名是有效的，签名密钥id：${keyID.toHex()}`)
+        } catch (e) {
+          alert(`此签名是无效的，不是私钥所有者发布`)
+        }
+      } catch (e) {
+        alert(`验证签名失败，请检查公钥和签名是否正确\n${e.message||e||"未知错误"}`);
+      }
+      $("#csign").innerText = "检查签名";
+      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
+    }
+  </script>
+</body>
+</html>

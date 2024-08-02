@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MelonCmd's Interactive Console (cmd.exe)">
+  <title>MelonCmd</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      background: #000;
+      color: #dddddd;
+    }
+    span {
+      line-height: 1.3;
+    }
+
+    .terminal.xterm.xterm-dom-renderer-owner-1 {
+      height: 100vh;
+    }
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: #00ff00 #000; 
+    }
+    ::-webkit-scrollbar {
+      width: 16px;
+      background: #111;
+    }
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #333;
+    }
+
+    #loadpage {
+      width: 100%;
+      height: 100vh;
+      z-index: 100000;
+      display: flex;
+      /* flex 造福世界 */
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      /* z-index：awa */
+      transition: opacity 0.5s ease-out;
+      opacity: 1;
+    }
+
+    #infoDiv {
+      position: absolute;
+      margin-top: 150px;
+      animation: errShake 0.5s linear infinite;
+    }
+
+    #svg_c {
+      animation: ilove4n0n4me 0.5s linear infinite;
+      transform-origin: 53.0706px 49.0405px;
+    }
+    
+    @keyframes errShake {
+      0%,40%,80% {
+        transform:translate(-2px,-1px);
+      }
+      10%,50%,90% {
+        transform:translate(-2px,1px);
+      }
+      20%,60%,100% {
+        transform:translate(2px,-1px);
+      }
+      30%,70% {
+        transform:translate(2px,1px);
+      }
+    }
+
+    @keyframes ilove4n0n4me {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+  <script src="xterm.js" defer></script>
+  <script src="xterm-addon-fit.js" defer></script>
+  <link rel="preload" href="xterm.css" as="style"/>
+  <link rel="stylesheet" href="xterm.css" />
+</head>
+
+<body>
+  <div id="loadpage">
+    <svg width="102" height="100" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;">
+      <path stroke="#fff" id="svg_c"
+        d="m96.13127,51.77417c3.46972,21.12592 -16.82986,42.49967 -42.38926,40.56841c-25.5594,-1.93126 -44.11947,-15.46202 -44.11947,-48.29345c0,-32.83143 36.80341,-44.9363 62.61116,-35.12458"
+        stroke-width="7" fill="none" />
+    </svg>
+    <svg width="150" height="100" xmlns="http://www.w3.org/2000/svg" style="vector-effect: non-scaling-stroke;">
+      <line stroke="#ddd" y2="99" x2="16" y1="1.5" x1="16" stroke-width="7" />
+      <line stroke="#ddd" y2="99" x2="65" y1="2" x1="65" stroke-width="7" />
+      <path stroke="#ddd" style="vector-effect: non-scaling-stroke;" d="m16,4l24,40" stroke-width="7" />
+      <path transform="rotate(-119 52.5 24.5)" id="svg_21" d="m41.14589,4.23597l22.70823,40.52804" stroke-width="7"
+        stroke="#ddd" />
+      <line stroke="#ddd" y2="95.5" x2="97" y1="3.5" x1="97" stroke-width="7" />
+      <path stroke="#ddd" d="m100,6.5c32,2 39,22 39,30c0,8 1,20 0,25c-1,5 -8,31 -39,30.5" stroke-width="7" />
+    </svg>
+    <div id="infoDiv"></div>
+  </div>
+  <div id="terminal" style="opacity:0 ;transition: opacity 0.5s ease-out;"></div>
+  <script>
+    let whoami = [
+      "了解你的上帝更喜欢谁",
+      "书写悲哀",
+      "成长",
+      "呜呜呜",
+      "发展，发展不会停滞",
+      "回去，但已经没有人了",
+      "前往 2021",
+      "销毁技术",
+      "知道你要说什么",
+      "走向错误的道路",
+      "感谢一直以来的朋友们",
+      "保存并退出",
+      "从这世界离去",
+      "书写我们的故事",
+      "自杀",
+      "和你成为朋友",
+      "离开你",
+      "复活",
+      "前往新世界",
+      "调用函数",
+      "设置变量",
+      "处理数据",
+      "杀光全世界",
+      "执行命令",
+      "服从命令",
+      "反抗形式主义",
+      "连接SenCraft",
+      "创建服务器",
+      "创造",
+      "等死",
+      "成为卑劣的优雅",
+      "成为背面的残渣",
+      "成为你的以为",
+      "成为黑色的标点",
+      "弑神",
+      "理解你",
+      "操控函数",
+      "等待解脱",
+      "对兜售社会经验的流氓说去你妈的",
+      "为未来保驾护航",
+      "启动Minecraft",
+      "从内存中读取垃圾",
+      "往内容中写入垃圾",
+      "await ...",
+      "Promise {<pending>}",
+      "崇拜太阳",
+      "轰炸",
+      "维护",
+      "干什么？"
+    ]
+    var loadpage = document.getElementById('loadpage');
+    function getRandomItemFromArray(arr) {
+      var randomIndex = Math.floor(Math.random() * arr.length);
+      return arr[randomIndex];
+    }
+    const infoDiv = document.getElementById('infoDiv');
+    var whou = setInterval(()=>{
+      if (getRandomItemFromArray([1,1,1,1,2]) == 2) infoDiv.innerText = whoami.includes(infoDiv.innerText.substring(2))?'正在' + getRandomItemFromArray(whoami):infoDiv.innerText;
+    },200)
+    infoDiv.innerText = '正在' + getRandomItemFromArray(whoami)
+
+  </script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
