@@ -20,7 +20,8 @@
   <p>如果你的私钥受密码保护，请粘贴密码，否则请忽略</p>
   <input type="text" id="ps">
   <p></p>
-  <button id="sign" onclick="sign()">签名</button>
+  <button id="sign"><del>签名</del></button>
+  <label>你不能进行签名操作，因为Web端的OpenPGP存在<a href="https://github.com/openpgpjs/openpgpjs/issues/1784">问题</a></label>
   <p>签名完成后，把下面输出附赠在你的聊天内容后面，并且注明地址是这里，这可以让有你公钥的人验证你的消息</p>
   <textarea id="sign-output">..签名结果输出..</textarea>
   <h2>验证文本签名</h2>
@@ -36,7 +37,9 @@
   <script>
     const $ = o => document.querySelector(o);
     const $_ = o => document.querySelectorAll(o)
-
+    setInterval(()=>{
+      $("#sign").disabled = true
+    },100)
     async function sign() {
       $("#sign").innerText = "签名中...";
       [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
