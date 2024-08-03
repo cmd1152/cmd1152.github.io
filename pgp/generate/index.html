@@ -71,7 +71,7 @@
           <textarea>${key.publicKey}</textarea>
           <p>私钥（Private Key），和名称一样，你需要妥善保管，不要让其他人知道，这是你签名所需要的凭证</p>
           <textarea>${key.privateKey}</textarea>
-          <p>吊销证书（revocation Certificate），如果你的私钥被泄露，这个用于告诉其他用户公钥不太可信，这个和秘钥一样重要，任何人拥有他都可以让你的私钥失效！</p>
+          <p>吊销证书（revocation Certificate），如果你的私钥被泄露，这个用于告诉其他用户公钥不再可信，这个和秘钥一样重要，任何人拥有他都可以让你的密钥失效！</p>
           <textarea>${key.revocationCertificate}</textarea>
           <p>密码保护（passphrase），如果你刚刚输入了 “使用密码保护私钥（可选）” 那一栏，那么私钥必须通过此密码解密才可以使用</p>
           <textarea>${$("#options-passphrase").value}</textarea>
