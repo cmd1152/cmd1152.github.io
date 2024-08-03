@@ -39,7 +39,7 @@
 
     async function sign() {
       $("#sign").innerText = "签名中...";
-      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
+      [...$_("input"),...$_("textarea"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
       try {
         let prKey = await openpgp.readPrivateKey({ armoredKey: $("#pr").value })
         if ($("#ps").value !== "") {
@@ -60,12 +60,12 @@
         alert(`签名失败，请检查私钥和私钥密码是否正确\n${e.message||e||"未知错误"}`);
       }
       $("#sign").innerText = "签名";
-      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
+      [...$_("input"),...$_("textarea"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
     }
 
     async function csign() {
       $("#csign").innerText = "验证签名中...";
-      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
+      [...$_("input"),...$_("textarea"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = true});
       try {
         let puKey = await openpgp.readKey({ armoredKey: $("#p-signed").value })
         let msg = await openpgp.createMessage({ text: $("#signed").value });
@@ -88,7 +88,7 @@
         alert(`验证签名失败，请检查公钥和签名是否正确\n${e.message||e||"未知错误"}`);
       }
       $("#csign").innerText = "检查签名";
-      [...$_("input"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
+      [...$_("input"),...$_("textarea"),...$_("select"),...$_("button")].forEach((inp)=>{ inp.disabled = false});
     }
   </script>
 </body>
