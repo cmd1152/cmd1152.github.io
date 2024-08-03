@@ -59,11 +59,13 @@
         let passphrase = $("#options-passphrase").value!=="" ? { passphrase:$("#options-passphrase").value}:{};
         const key = await openpgp.generateKey({
           type: $("#options-type").value, // ECC algorithm
-          curve: $("#options-type").value=="ecc"?'curve25519':$("#options-key-size").value, // ECC curve type
+          curve: 'curve25519', // ECC curve type
           userIDs: [{ name: $("#options-name").value, email: $("#options-email").value }],
+          rsaBits: $("#options-key-size").value,
           ...passphrase,
           format: 'armored' // output armored keys
         });
+
         let pk = await openpgp.readKey({ armoredKey: key.publicKey });
         $("#textinput-holder").innerHTML = `
           <h4>密钥已成功创建</h4>
